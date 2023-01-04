@@ -1,0 +1,28 @@
+.headerIndex {
+    grid-area: header;
+    background-image: url(../img/foto.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+.encabezadoInfo {
+    color: white;
+
+}
+
+.btnHeader {
+    margin-top: 10px;
+    padding: 5px 25px;
+    background-color: rgba(100, 72, 30, 0.603);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+}

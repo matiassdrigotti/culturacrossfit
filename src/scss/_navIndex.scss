@@ -1,0 +1,35 @@
+.navIndex {
+    grid-area: nav;
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.logo img {
+    width: 80px;
+    height: 100px;
+}
+
+.paginas>ul {
+    list-style-type: none;
+    display: flex;
+
+}
+
+.paginas>ul>li>a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.usuario {
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+}

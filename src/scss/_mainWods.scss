@@ -1,0 +1,63 @@
+.mainWods {
+    grid-area: main;
+
+
+}
+
+.mainSection1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainTextos1 {
+    background-color: rgba(0, 92, 128, 0.582);
+    font-weight: bold;
+    font-style: oblique;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainTextos2 {
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.mainSection2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-style: oblique;
+
+}
+
+.mainSectionB {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px 5px 10px;
+    background-color: rgba(19, 219, 176, 0.445);
+
+}
+
+.mainSectionB>p {
+    padding: 10px;
+
+}
+
+.mainSectionC {
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(100, 90, 87, 0.445);
+
+}
