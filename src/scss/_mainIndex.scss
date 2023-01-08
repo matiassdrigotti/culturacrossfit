@@ -1,81 +1,82 @@
 .mainIndex {
     grid-area: main;
 
+    > .tarjetasSection1 {
+        background-color: rgba(0, 92, 128, 0.836);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        > .subtitulo {
+            margin: 5px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-style: italic;
+            font-weight: bold;
+        }
+        > .tarjetas {
+            display: flex;
+            flex-flow: row wrap;
+            align-content: center;
+            justify-content: center;
+            margin: 10px;
+            > .tarjeta {
+                display: flex;
+                height: 100px;
+                gap: 10px;
+                margin: 10px;
+                > img {
+                    width: 150px;
+                
+                }
+                > .tarjetaInfo {
+                    margin: auto;
+                    > .btnMain {
+                        margin-top: 10px;
+                        padding: 5px 25px;
+                        background-color: rgba(31, 30, 100, 0.856);
+                        border: none;
+                        color: white;
+                        border-radius: 5px;
+                        font-weight: bold;
+                    }
+                }
+            
+            }
+        }
 
-}
+    }
+    > .tarjetasSection2 {
+        background-color: rgba(33, 53, 66, 0.788);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        > .Video iframe {
+            width: 500px;
+            height: 315px;
+            padding: 20px 0px 0px 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @media (max-width: 570px) {
+                display: flex;
+                justify-content: center;
+                width: auto;
+                height: 315px;
+            }
+        
+        }
+        > .VideoParrafo {
+            background-color: rgba(255, 255, 255, 0.753);
+            padding: 10px;
+            margin: 0px 20px 20px 20px;
+            color: black;
+            font-weight: bold;
+            font-style: oblique;
+            border-radius: 10px;
+        
+        }
+    }
 
-.tarjetasSection1 {
-    background-color: rgba(0, 92, 128, 0.836);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.tarjetas {
-    display: flex;
-    flex-flow: row wrap;
-    align-content: center;
-    justify-content: center;
-    margin: 10px;
-}
-
-.subtitulo {
-    margin: 5px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-style: italic;
-    font-weight: bold;
-}
-
-.tarjeta {
-    display: flex;
-    height: 100px;
-    gap: 10px;
-    margin: 10px;
-
-}
-
-.tarjetaInfo {
-    margin: auto;
-
-}
-
-.tarjeta img {
-    width: 150px;
-
-}
-
-.btnMain {
-    margin-top: 10px;
-    padding: 5px 25px;
-    background-color: rgba(31, 30, 100, 0.856);
-    border: none;
-    color: white;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.tarjetasSection2 {
-    background-color: rgba(33, 53, 66, 0.788);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.Video {
-    padding: 20px 0px 0px 0px;
-
-}
-
-.VideoParrafo {
-    background-color: rgba(255, 255, 255, 0.753);
-    padding: 10px;
-    margin: 0px 20px 20px 20px;
-    color: black;
-    font-weight: bold;
-    font-style: oblique;
-    border-radius: 10px;
-
+    
 }

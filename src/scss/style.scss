@@ -4,15 +4,13 @@
     box-sizing: border-box;
 }
 
+@import "asideContactos";
 @import "gridIndex";
-@import "navIndex";
-@import "headerIndex";
-@import "mainIndex";
 @import "footerIndex";
-@import "navWods";
-@import "headerWods";
-@import "mainWods";
-@import "navContactos";
 @import "headerContactos";
+@import "headerIndex";
+@import "headerWods";
 @import "mainContactos";
-
+@import "mainIndex";
+@import "mainWods";
+@import "navIndex";

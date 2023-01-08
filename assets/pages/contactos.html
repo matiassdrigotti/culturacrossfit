@@ -5,62 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contactos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <nav class="navContactos">
+    <nav class="navIndex">
         <div class="logo">
         <img src="../img/logo_crossfit.png" alt="">
         </div>
         <div class="paginas">
+            <i class="fa-solid fa-bars"></i>
             <ul>
-                <li><a href="../../index.html">Inicio</a></li>
+                <li><a href="/index.html">Inicio</a></li>
                 <li><a href="./wods.html">Wods</a></li>
                 <li><a href="./queEsCrossfit.html">¿Que es Crossfi?</a></li>
                 <li><a href="./plantillaNutricion.html">Plantilla Nutrición</a></li>
                 <li><a href="./contactos.html">Contactanos</a></li>
-                <li class="usuario">Cuenta / lupa buscador</li>
             </ul>
         </div>
     </nav>
     <header class="headerContactos">
         <img src="../img/contactanos.jpg" alt="">
     </header>
-    <main class="mainContactos">
-        <section class="mainSection1Contactos">
-            <form action="" method="get">
-                <label for="Nombre">
-                    <input type="text" name="nombre" placeholder="Ingrese su nombre" >
-                </label>
-                <br>
-                <br>
-                <label for="Apellido">
-                    <input type="text" name="apellido" placeholder="Ingrese su apellido" >
-                </label>
-                <br>
-                <br>
-                <label for="Mensaje">
-                    <textarea name="mensaje" placeholder="Ingrese un mensaje"></textarea>
-                </label>
-                <br>
-                <br>
-                <div class="btn-contacto">
-                    <input type="submit" value="Enviar">
-                </div>
-            </form>
-        </section>
-        <section class="mainSection2Contactos">
-            <div>
-                <li>Direccion:</li>
-                <li>Telefono:</li>
-                <li>Mail:</li>
-                <li>Redes Sociales:</li>
+    <main>
+        <form class="formulario" action="">
+            <h2>Contactanos</h2>
+            <label>
+                Nombre Completo
+                <input type="text" name="nomApell" required>
+            </label>
+            <label>
+                Email
+                <input type="email" name="email" required>
+            </label>
+            <label>
+                Teléfono
+                <input type="tel" name="tel" required>
+            </label>
+            <label>
+                Asunto
+                <input type="text" name="asunto" required>
+            </label>
+            <label>
+                Mensaje
+                <textarea name="mensaje"></textarea>
+            </label>
+            <button type="submit">Enviar</button>
+    
+        </form>
+    </main>
+    <aside>
+        <section class="asideContactos">
+            <div class="listaContactos">
+                <li>Direccion: Av.Marquez 678, San Isidro</li>
+                <li>Telefono: 1134569809</li>
+                <li>Mail: info@culturacrossfit.com.ar</li>
+                <li>Seguinos en nuestras redes: culturacrossfit</li>
             </div>
             <div class="maps">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3288.2000638594136!2d-58.55757324797532!3d-34.497811959315975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbbce5ebbe409%3A0x7c4fbc784c4c99b0!2sThunderbox%20San%20Isidro!5e0!3m2!1ses!2sar!4v1669653360204!5m2!1ses!2sar"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
-    </main>
+    </aside>
     <footer class="footerIndex">
         <div class="footerMail">            
             <a href="info@culturacrossfit.com.ar">info@culturacrossfit.com.ar</a>

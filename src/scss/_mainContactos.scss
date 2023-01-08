@@ -1,59 +1,123 @@
-.mainContactos {
-    grid-area: main;
-    background-color: blanchedalmond;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.mainSection1Contactos {
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    padding: 20px;
+.formulario{
+    background-color:#121fb3 ;
+    max-width: 800px;
+    margin: 20px auto ;
     border-radius: 10px;
-    margin: auto;
-}
-
-.mainSection1Contactos input {
-    width: 550px;
-    padding: 5px;
-}
-
-.mainSection1Contactos textarea {
-    width: 550px;
-    height: 150px;
-}
-
-.btn-contacto input {
-    background-color: rgb(0, 183, 255);
-    color: #FFF;
-    height: 30px;
-
-}
-
-.mainSection2Contactos {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-}
-
-.mainSection2Contactos li {
-    background-color: #FFF;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    list-style: none;
+    color: white;
+    padding: 30px;
+    margin-bottom: 10px;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 60px;
+    grid-template-areas:  "zona1    zona1"
+                          "zona2    zona3"
+                          "zona4    zona5"
+                          "zona6    zona6"
+                          "zona7    zona7";
+    @media(max-width:800px){
+        width: 100vw;
+        margin: 20px 0px;
+        border-radius: 0px;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 60px;
+        grid-template-areas:  "zona1"
+                              "zona2"
+                              "zona3"
+                              "zona4"
+                              "zona5"
+                              "zona6"
+                              "zona7";
+    }
+    @for $var from 1 to 8{
+        @if($var == 1){
+            h2:nth-child(#{$var}){
+                grid-area: zona#{$var};
+        }
+    }
+    @else if($var == 7){
+        button:nth-child(7){
+            grid-area:zona#{$var};
+            width: 200px;
+            border-radius: 5px;
+            border: none;
+            font-size: 20px;
+            color: #0a1266;
+            margin-top: 20px;
+        }
+        
+    }
+    @else{
+        label:nth-child(#{$var}){
+            grid-area: zona#{$var};
+        }
+    }       
+}       
+    label {
+        display: flex;
+        flex-direction: column;
+      
+      }
+    label input , .formulario label textarea {
+        background-color:transparent;
+        border: 0;
+        border-bottom: 1px solid white;
+        margin-top: 10px;
+        outline: none;
+        color: white;
+      }            
+  }
+ 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+ 
+  
+  
+  
+  .btn2{
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 12px 18px;
+    position: relative;
+    z-index: 1;
     margin: 10px;
-    font-weight: bold;
-}
-
-.maps iframe {
-    margin: 0px 0px 10px 0px;
+  }
+  .btn2 > i {
+    margin-left: 20px;
+  }
+  
+  .btn2::before{
+    content: "";
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    background-color: red;
+    position: absolute;
+    z-index: -1;
+    left: 83px;
+    transform: translate(0,-50%);
+    top: 50%;
+    transition: width 0.25s ,left 0.25s 0.25s;
+  
+  }
+  
+  .btn2:hover::before{
+    left: 0;
     width: 100%;
-    height: 400px;
-}
+    transition: left 0.25s , width 0.25s 0.25s;
+    
+  
+  
+  }

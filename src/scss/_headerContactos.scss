@@ -1,9 +1,12 @@
 .headerContactos {
     grid-area: header;
+    > img {
+        height: 350px;
+        width: 100vw;
+        @media (max-width: 670px) {
+            background-size: cover;
+        }
+       
+    }
 }
 
-.headerContactos img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}

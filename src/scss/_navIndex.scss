@@ -5,31 +5,62 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-
+    @media (max-width: 670px) {
+        flex-direction: row-reverse;
+    }     
+    > .logo img {
+        width: 100px;
+        height: 100px;
+        @media (max-width: 670px) {
+            width: 60px;
+            height: 60px;
+        }
+    }
+    > .paginas {
+        > .fa-bars {
+            color: white;
+            font-size: 44px;
+            display: none; 
+            left: 20px;
+            @media (max-width: 670px) {
+                display: block;
+                &:hover + ul {
+                    left: 0;
+                }
+            }
+        }
+        > ul {
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            @media (max-width: 670px) {
+                position: fixed;
+                top: 80px;
+                left: -300px;
+                flex-direction: column;
+                justify-content: start;
+                align-items: center;
+                padding-top: 70px;
+                background-color: black;
+                width: 250px;
+                height: 100vh;
+                transition: 0.5s;
+            }
+            > li {
+                > a{
+                    display: block;
+                    padding: 20px;
+                    text-decoration: none;
+                    color: white;
+                    font-size: 20px;
+                    
+                }
+            }
+        }       
+    }
 }
 
-.logo img {
-    width: 80px;
-    height: 100px;
-}
 
-.paginas>ul {
-    list-style-type: none;
-    display: flex;
 
-}
 
-.paginas>ul>li>a {
-    display: block;
-    padding: 20px;
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-}
 
-.usuario {
-    background-color: aliceblue;
-    display: flex;
-    align-items: center;
-}
