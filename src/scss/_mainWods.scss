@@ -4,7 +4,7 @@
     > .mainSection1 {
         display: flex;
         justify-content: space-between;
-            @media (max-width: 880px) {
+            @media (max-width: 1040px) {
                 display: flex;
                 flex-direction: column;
             }
@@ -17,7 +17,7 @@
             font-weight: bold;
             font-style: oblique;
             padding: 15px;
-                
+                            
         }
     }
     > .mainSection2 {
@@ -27,7 +27,9 @@
         justify-content: center;
         font-weight: bold;
         font-style: oblique;
+        
         > .mainTextos2 {
+            list-style: none;
             background-color: beige;
             padding: 10px;
         }

@@ -83,6 +83,9 @@
 .headerContactos > img {
   height: 350px;
   width: 100vw;
+  box-shadow: 0px 1px 6px 4px rgba(92, 90, 90, 0.2);
+  -webkit-box-shadow: 0px 1px 6px 4px rgba(92, 90, 90, 0.2);
+  -moz-box-shadow: 0px 1px 6px 4px rgba(92, 90, 90, 0.2);
 }
 @media (max-width: 670px) {
   .headerContactos > img {
@@ -101,6 +104,8 @@
   align-items: center;
   font-weight: bold;
   font-style: italic;
+  color: white;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.555), 1px -1px 0px rgba(0, 0, 0, 0.555), -1px 1px 0px rgba(0, 0, 0, 0.555), -1px -1px 0px rgba(0, 0, 0, 0.555), 1px 0px 0px rgba(0, 0, 0, 0.555), 0px 1px 0px rgba(0, 0, 0, 0.555), -1px 0px 0px rgba(0, 0, 0, 0.555), 0px -1px 0px rgba(0, 0, 0, 0.555);
 }
 @media (max-width: 700px) {
   .headerIndex {
@@ -137,6 +142,8 @@
   justify-content: center;
 }
 .headerWods > .wods > .wodsTextos h1 {
+  box-shadow: 0px 0px 10px 0px #333 inset;
+  text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.39);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -151,6 +158,7 @@
   }
 }
 .headerWods > .wods > .wodsTextos p {
+  box-shadow: 0px 0px 10px 0px #333 inset;
   color: black;
   font-weight: bold;
   font-style: oblique;
@@ -159,6 +167,7 @@
 }
 .headerWods > .wods > .listaUno {
   list-style: none;
+  box-shadow: 0px 0px 10px 0px #333 inset;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -174,19 +183,31 @@
   }
 }
 .headerWods > .wods > .listaParrafos {
+  box-shadow: 0px 0px 10px 0px #333 inset;
   color: black;
   padding: 20px;
-  font-weight: bold;
+  font-weight: 500;
   font-style: oblique;
   background-color: rgba(100, 90, 87, 0.445);
 }
+.headerWods > .wods > .listaParrafos h2 {
+  font-weight: bold;
+  text-decoration-line: underline;
+  text-shadow: 2px 1px 0px rgba(0, 0, 0, 0.36);
+  color: rgb(255, 255, 255);
+}
+.headerWods > .wods > .listaParrafos h3 {
+  font-weight: bold;
+  text-decoration-line: underline;
+  color: rgb(141, 108, 47);
+}
 
 .formulario {
-  background-color: #121fb3;
+  background-color: rgba(20, 18, 18, 0.582);
   max-width: 800px;
   margin: 20px auto;
   border-radius: 10px;
-  color: white;
+  color: rgba(255, 255, 255, 0.808);
   padding: 30px;
   margin-bottom: 10px;
   gap: 10px;
@@ -194,6 +215,9 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 60px;
   grid-template-areas: "zona1    zona1" "zona2    zona3" "zona4    zona5" "zona6    zona6" "zona7    zona7";
+  box-shadow: -1px 0px 7px 4px rgba(255, 255, 255, 0.46) inset;
+  -webkit-box-shadow: -1px 0px 7px 4px rgba(255, 255, 255, 0.46) inset;
+  -moz-box-shadow: -1px 0px 7px 4px rgba(255, 255, 255, 0.46) inset;
 }
 @media (max-width: 800px) {
   .formulario {
@@ -229,7 +253,8 @@
   border-radius: 5px;
   border: none;
   font-size: 20px;
-  color: #0a1266;
+  font-weight: bold;
+  color: rgba(189, 42, 42, 0.918);
   margin-top: 20px;
 }
 .formulario label {
@@ -254,8 +279,7 @@
   z-index: 1;
   margin: 10px;
 }
-
-.btn2 > i {
+.btn2 .i {
   margin-left: 20px;
 }
 
@@ -283,7 +307,7 @@
   grid-area: main;
 }
 .mainIndex > .tarjetasSection1 {
-  background-color: rgba(0, 92, 128, 0.836);
+  background-color: rgba(198, 207, 204, 0.582);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -307,12 +331,20 @@
   height: 100px;
   gap: 10px;
   margin: 10px;
+  -webkit-box-shadow: 0px 0px 4px 5px rgba(0, 0, 0, 0.04);
+  -moz-box-shadow: 0px 0px 4px 5px rgba(0, 0, 0, 0.04);
+  box-shadow: 0px 0px 4px 5px rgba(0, 0, 0, 0.04);
 }
 .mainIndex > .tarjetasSection1 > .tarjetas > .tarjeta > img {
   width: 150px;
 }
 .mainIndex > .tarjetasSection1 > .tarjetas > .tarjeta > .tarjetaInfo {
   margin: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .mainIndex > .tarjetasSection1 > .tarjetas > .tarjeta > .tarjetaInfo > .btnMain {
   margin-top: 10px;
@@ -324,7 +356,7 @@
   font-weight: bold;
 }
 .mainIndex > .tarjetasSection2 {
-  background-color: rgba(33, 53, 66, 0.788);
+  background-color: rgba(182, 189, 186, 0.582);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -354,6 +386,7 @@
   font-weight: bold;
   font-style: oblique;
   border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px #333 inset;
 }
 
 .mainWods {
@@ -363,7 +396,7 @@
   display: flex;
   justify-content: space-between;
 }
-@media (max-width: 880px) {
+@media (max-width: 1040px) {
   .mainWods > .mainSection1 {
     display: flex;
     flex-direction: column;
@@ -388,6 +421,7 @@
   font-style: oblique;
 }
 .mainWods > .mainSection2 > .mainTextos2 {
+  list-style: none;
   background-color: beige;
   padding: 10px;
 }

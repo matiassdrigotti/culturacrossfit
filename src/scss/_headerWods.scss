@@ -7,6 +7,8 @@
         
         > .wodsTextos {
             h1 {
+                box-shadow: 0px 0px 10px 0px #333 inset;
+                text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.39);
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -20,6 +22,7 @@
 
             }
             p {
+                box-shadow: 0px 0px 10px 0px #333 inset;
                 color: black;
                 font-weight: bold;
                 font-style: oblique;
@@ -29,6 +32,7 @@
         }
         > .listaUno {
             list-style: none;
+            box-shadow: 0px 0px 10px 0px #333 inset;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
@@ -42,11 +46,23 @@
             }
         }
         > .listaParrafos {
+            box-shadow: 0px 0px 10px 0px #333 inset;
             color: black;
             padding: 20px;
-            font-weight: bold;
+            font-weight: 500;
             font-style: oblique;
             background-color: rgba(100, 90, 87, 0.445);
+            h2 {
+                font-weight: bold;
+                text-decoration-line: underline;
+                text-shadow: 2px 1px 0px rgba(0, 0, 0, 0.36);
+                color: rgb(255, 255, 255);
+            }
+            h3 {
+                font-weight: bold;
+                text-decoration-line: underline;
+                color: rgb(141, 108, 47);
+            }
             
         }    
         

@@ -1,17 +1,21 @@
 .mainIndex {
     grid-area: main;
-
+    
     > .tarjetasSection1 {
-        background-color: rgba(0, 92, 128, 0.836);
+        background-color: rgba(198, 207, 204, 0.582);
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        
+        
         > .subtitulo {
             margin: 5px;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             font-style: italic;
             font-weight: bold;
+            
+            
         }
         > .tarjetas {
             display: flex;
@@ -19,17 +23,27 @@
             align-content: center;
             justify-content: center;
             margin: 10px;
+            
             > .tarjeta {
                 display: flex;
                 height: 100px;
                 gap: 10px;
                 margin: 10px;
+                -webkit-box-shadow: 0px 0px 4px 5px rgba(0,0,0,0.04);
+                -moz-box-shadow: 0px 0px 4px 5px rgba(0,0,0,0.04);
+                box-shadow: 0px 0px 4px 5px rgba(0,0,0,0.04);
+                
                 > img {
                     width: 150px;
                 
                 }
                 > .tarjetaInfo {
                     margin: auto;
+                    padding: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
                     > .btnMain {
                         margin-top: 10px;
                         padding: 5px 25px;
@@ -38,6 +52,7 @@
                         color: white;
                         border-radius: 5px;
                         font-weight: bold;
+                        
                     }
                 }
             
@@ -46,7 +61,7 @@
 
     }
     > .tarjetasSection2 {
-        background-color: rgba(33, 53, 66, 0.788);
+        background-color: rgba(182, 189, 186, 0.582);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -74,6 +89,7 @@
             font-weight: bold;
             font-style: oblique;
             border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px #333 inset;
         
         }
     }

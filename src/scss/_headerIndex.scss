@@ -9,6 +9,17 @@
     align-items: center;
     font-weight: bold;
     font-style: italic;
+    color:white;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.555), 
+                 1px -1px 0px rgba(0, 0, 0, 0.555), 
+			     -1px 1px 0px rgba(0, 0, 0, 0.555), 
+			     -1px -1px 0px rgba(0, 0, 0, 0.555), 
+			     1px 0px 0px rgba(0, 0, 0, 0.555), 
+			     0px 1px 0px rgba(0, 0, 0, 0.555), 
+			     -1px 0px 0px rgba(0, 0, 0, 0.555), 
+			     0px -1px 0px rgba(0, 0, 0, 0.555);
+    
+
     @media (max-width: 700px) {
         height: 500px;
         
